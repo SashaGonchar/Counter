@@ -22,15 +22,15 @@ class Counter extends Component {
     }
 
     random = () => {
-        this.setState(state => ({
+        this.setState({
             currentNum: Math.floor(Math.random() * 50)
-        }))
+        })
     }
 
     reset = () => {
-        this.setState(state => ({
+        this.setState({
             currentNum: this.props.startNum
-        }))
+        })
     }
 
 
